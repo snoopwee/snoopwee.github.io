@@ -1,0 +1,148 @@
+/*
+ * Globals
+ */
+
+
+/* Custom default button */
+.btn-light,
+.btn-light:hover,
+.btn-light:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+
+/*
+ * Base structure
+ */
+
+body {
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+  max-width: 100%;
+}
+body {
+  /* The image used */
+  background-image: url('images/steam.jpg');;
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/*
+ * Header
+ */
+
+
+.nav-masthead .nav-link {
+  color: rgba(255, 255, 255, .5);
+  border-bottom: .25rem solid transparent;
+  
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.header3 {
+  width: 100%; /* This will make your header span the full width of the screen */
+  position: fixed; /* This will make your header fixed at the top of the screen */
+  top: 0; /* This will align your header to the top of the screen */
+  left: 0; /* This will align your header to the left of the screen */
+  z-index: 9999; /* This will ensure your header stays on top of other elements */
+  background-color: #333; /* Change this to the color you want */
+  height:70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header3 h3 {
+  padding-right : 900px; /* This will add a margin around your h3 and nav elements */
+}
+.about_section layout_padding{
+  align-items: center;
+  justify-content: center;
+}
+.heading_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact_section .form_container input {
+  width: 100%;
+  border: 1px solid #b0b0b0;
+  height: 50px;
+  margin-bottom: 25px;
+  padding-left: 15px;
+  background-color: white;
+  outline: none;
+  color: #101010;
+}
+
+.contact_section .form_container input::-webkit-input-placeholder {
+  color: #b0b0b0;
+}
+
+.contact_section .form_container input:-ms-input-placeholder {
+  color: #b0b0b0;
+}
+
+.contact_section .form_container input::-ms-input-placeholder {
+  color: #b0b0b0;
+}
+
+.contact_section .form_container input::placeholder {
+  color: #b0b0b0;
+}
+
+.contact_section .form_container input.message-box {
+  height: 120px;
+}
+
+.contact_section .form_container .btn_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact_section .form_container button {
+  border: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 15px 65px;
+  background-color: #ff4646;
+  color: #ffffff;
+  border-radius: 0;
+  border: 1px solid #ff4646;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  font-weight: bold;
+}
+
+.contact_section .form_container button:hover {
+  background-color: transparent;
+  color: #ff4646;
+}
